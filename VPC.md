@@ -28,3 +28,7 @@ Amazon VPC automatically creates the main route table.
 
 **Target**: where the traffic is directed (10.0.0.0/16 etc...)  
 **Distination**: specify the IP range that can be directed to targets (Local, igw-xxxxxxx etc...)
+
+## Internet Gateway
+
+An internet gateway (IG) is a component of VPC that allows your VPC to communicate with the internet.
