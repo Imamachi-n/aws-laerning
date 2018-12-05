@@ -32,3 +32,10 @@ Amazon VPC automatically creates the main route table.
 ## Internet Gateway
 
 An internet gateway (IG) is a component of VPC that allows your VPC to communicate with the internet.
+
+## Network Address Translation (NAT)
+
+NAT devices enables any instance in private subnets to connect to the internet.
+A NAT device forwards traffic from the instances in private subnets to the internet and then returns the response to the instances.
+
+### NAT Instances
