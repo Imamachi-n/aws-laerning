@@ -1,4 +1,4 @@
-# Amazon VPC componenets and terminology
+# Amazon VPC components and terminology
 
 ## Amazon VPC
 
@@ -39,3 +39,9 @@ NAT devices enables any instance in private subnets to connect to the internet.
 A NAT device forwards traffic from the instances in private subnets to the internet and then returns the response to the instances.
 
 ### NAT Instances
+
+In general, web servers are run in a public subset and database servers are run in a private subset. We need to provide the internet access to the database servers because downloading database patches or install something.
+
+NAT instance is created in a public subnet and database servers connect the internet via the NAT instance.
+
+Public subnet is assigned the routing table with a local network (VPC) and an internet gateway as targets. On the other hand, private subnet is assigned the routing table with a local network (VPC) and a NAT instance.
