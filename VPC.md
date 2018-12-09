@@ -45,3 +45,11 @@ In general, web servers are run in a public subset and database servers are run 
 NAT instance is created in a public subnet and database servers connect the internet via the NAT instance.
 
 Public subnet is assigned the routing table with a local network (VPC) and an internet gateway as targets. On the other hand, private subnet is assigned the routing table with a local network (VPC) and a NAT instance.
+
+### NAT Gateway
+
+A NAT gateway performs the same function as that of a NAT instance. But it is a managed service in AWS and does not require administration overhead.
+
+### Egress-only internet gateway
+
+Egress-only internet gateway is the same as NAT gateway. It allows VPC to connect with the internet for **IPv6** traffic not IPv4. If using IPv4, NAT gateway is used instead of egree-only internet gateway.
