@@ -53,3 +53,9 @@ A NAT gateway performs the same function as that of a NAT instance. But it is a 
 ### Egress-only internet gateway
 
 Egress-only internet gateway is the same as NAT gateway. It allows VPC to connect with the internet for **IPv6** traffic not IPv4. If using IPv4, NAT gateway is used instead of egree-only internet gateway.
+
+## Elastic Network Interface
+
+ENI gives the ability to create one or more network interfaces and attach them to your instance.
+
+The network traffic is redirected to the new instance when you move a network interface from one instance to another.
