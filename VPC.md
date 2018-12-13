@@ -59,3 +59,7 @@ Egress-only internet gateway is the same as NAT gateway. It allows VPC to connec
 ENI gives the ability to create one or more network interfaces and attach them to your instance.
 
 The network traffic is redirected to the new instance when you move a network interface from one instance to another.
+
+## Elastic IP Address
+
+Elastic IP address is a static IP address. EIP can be easily tranferred from one instance to another. EIP can be dissociated from a resource and then re-associated with a different resource.
