@@ -63,3 +63,11 @@ The network traffic is redirected to the new instance when you move a network in
 ## Elastic IP Address
 
 Elastic IP address is a static IP address. EIP can be easily tranferred from one instance to another. EIP can be dissociated from a resource and then re-associated with a different resource.
+
+## Security Group
+
+A security group is like a virtual firewall that can assigned to any instance running in a virtual private cloud.  
+The security group is applied at the instance level and not at the subnet level. The changes of security group roles are reflected in the instances immediately and automatically. So you don't need to reboot the instance to reflect the changes.
+
+- **Inbound**: HTTP on port 80 from the internet, SSH on port 22 only from the corporate network and MySQL/Aurora on port 3306.
+- **Outbound**: HTTP on port 80 to the internet and MySQL/Aurora on port 3306 only to the database tier on corporate network.
