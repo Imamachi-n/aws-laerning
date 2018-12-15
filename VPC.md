@@ -71,3 +71,19 @@ The security group is applied at the instance level and not at the subnet level.
 
 - **Inbound**: HTTP on port 80 from the internet, SSH on port 22 only from the corporate network and MySQL/Aurora on port 3306.
 - **Outbound**: HTTP on port 80 to the internet and MySQL/Aurora on port 3306 only to the database tier on corporate network.
+
+## Network Access Control List
+
+A network access control list (NACL) is a layer of security that acts as a firewall at the **subnet** level.
+
+NACL is a stateless; the rules of inbound traffic are reflected to outbound traffic rules.
+
+### The difference between security group and network access control list
+
+- A security group can be applied only at the instance level, whereas an NACL can be applied at the subnet level.
+
+- Security group is stateful (return traffic is allowed by default), whereas an NACL is stateless (return traffic is not allowed by default).
+
+- A security group supports allow rules only, whereas an NACL allows both allow and deny rules.
+
+- In a security group, all the rules are evaluated before deciding whether to allow the traffic, whereas in NACL, the rule number gets precedence.
