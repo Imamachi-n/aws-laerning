@@ -87,3 +87,10 @@ NACL is a stateless; the rules of inbound traffic are reflected to outbound traf
 - A security group supports allow rules only, whereas an NACL allows both allow and deny rules.
 
 - In a security group, all the rules are evaluated before deciding whether to allow the traffic, whereas in NACL, the rule number gets precedence.
+
+## Amazon VPC Peering
+
+A VPC peering connection is a one-to-one relationship between two VPCs.
+
+The owner of each VPC (c.f. VPC A) needs to add a route to one or more of their VPC's route tables that point to the IP address range of the other VPC (c.f. VPC B. It means that the route table for one VPC cannot be overlapped/conflicted to the other VPC).
+VPC peering connectivity is also controlled via route tables referencing the peering connection as a target for routes.
