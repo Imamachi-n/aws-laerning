@@ -94,3 +94,7 @@ A VPC peering connection is a one-to-one relationship between two VPCs.
 
 The owner of each VPC (c.f. VPC A) needs to add a route to one or more of their VPC's route tables that point to the IP address range of the other VPC (c.f. VPC B. It means that the route table for one VPC cannot be overlapped/conflicted to the other VPC).
 VPC peering connectivity is also controlled via route tables referencing the peering connection as a target for routes.
+
+## Amazon VPC Endpoint
+
+There are many AWS services running outside VPC such as S3. VPC endpoint enables us to connect to VPC and S3 directly using a private connection. For example, EC2 and S3 are directly connected via VPC endpoint. Currently, VPC endpoint is available only for S3 and DynamoDB.
