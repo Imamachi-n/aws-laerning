@@ -98,3 +98,7 @@ VPC peering connectivity is also controlled via route tables referencing the pee
 ## Amazon VPC Endpoint
 
 There are many AWS services running outside VPC such as S3. VPC endpoint enables us to connect to VPC and S3 directly using a private connection. For example, EC2 and S3 are directly connected via VPC endpoint. Currently, VPC endpoint is available only for S3 and DynamoDB.
+
+## DNS and VPC
+
+The Domain Name System (DNS) server translate a domain name into IP addresses. EC2 intance has a public DNS hostname corresponding to the public IPv4 address and a private DNS hostname corresponding to the private IPv4 address.
