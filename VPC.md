@@ -1,4 +1,4 @@
-# Amazon VPC components and terminology
+# Amazon VPC components and terminology
 
 ## Amazon VPC
 
@@ -102,3 +102,16 @@ There are many AWS services running outside VPC such as S3. VPC endpoint enables
 ## DNS and VPC
 
 The Domain Name System (DNS) server translate a domain name into IP addresses. EC2 intance has a public DNS hostname corresponding to the public IPv4 address and a private DNS hostname corresponding to the private IPv4 address.
+
+## DHCP Option Sets
+
+Dynamic Host Configuration Protocol (DHCP) option sets are used to specify host configurations for instances in the VPC.
+
+DHCP option set is automatically created for the VPC.
+DHCP contains the several configuration parameters.
+
+- **domain-name-servers**: The IP addresses of domain name servers or AmazonProvidedDNS. The default DHCP option set specifies AmazonProvidedDNS.
+- **domain-name**: The domain name such as ec2.internal.
+- **ntp-servers**: The IP addresses of up to 4 Network Time Protocol (NTP) servers.
+- **netbios-name-servers**: The IP addresses of NetBIOS name servers.
+- **netbios-node-type**: The NetBIOS node type (1, 2, 4 or 8).
