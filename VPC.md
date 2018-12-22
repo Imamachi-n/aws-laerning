@@ -115,3 +115,35 @@ DHCP contains the several configuration parameters.
 - **ntp-servers**: The IP addresses of up to 4 Network Time Protocol (NTP) servers.
 - **netbios-name-servers**: The IP addresses of NetBIOS name servers.
 - **netbios-node-type**: The NetBIOS node type (1, 2, 4 or 8).
+
+## Connecting to a VPC
+
+### Virtual private gateway
+
+You can enable access to your network from your VPC by attaching a virtual private gateway to the VPC.
+
+### Customer gateway
+
+A customer gateway is the anchor on your side of that connection. The anchor on the AWS side of the VPN connection is called a virtual private gateway.
+
+### 4 main private connectivity options (for a VPC and your corporate data center)
+
+#### AWS hardware VPN
+
+On the AWS side of the VPN connection, a virtual private gateway provides two VPN endpoints for automatic failover. On the remote side of the VPN connection, a customer gateway, which is the physical device or software application, are configured.
+
+AWS supports both static and dynamic BGP-based and VPN connection. BGP is the protocal used to exchange routing information on the internet.
+
+#### AWS Direct Connect
+
+AWS direct connect provides a dedicated private connnection from your corporate data center to your VPC. Using this, you get consistent network performance.
+
+#### VPN CloudHub
+
+AWS VPN cloudhub enables multiple sites to access your VPC or securely accesss each other using a simple hub-and-spoke model.
+
+#### Software VPN
+
+You can create a VPN connection to your remote network by using an Amazon EC2 instance in your VPC running a software VPNN appliance.
+
+Many customers initially start with a virtual private network and gradually establish a direct connection when their traffic increases.
