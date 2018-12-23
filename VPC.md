@@ -147,3 +147,11 @@ AWS VPN cloudhub enables multiple sites to access your VPC or securely accesss e
 You can create a VPN connection to your remote network by using an Amazon EC2 instance in your VPC running a software VPNN appliance.
 
 Many customers initially start with a virtual private network and gradually establish a direct connection when their traffic increases.
+
+## VPC Flow Logs
+
+Amazon VPC flow logs enable you to capture information about the IP traffic going to and from network interfaces in your VPC. Flow log data is stored using Amazon **CloudWatch** logs.
+
+## Default VPC
+
+In every account, a VPC is created in each region by default. This is created to provide simplicity and convinience and to help you jumpstart t o AWS.
